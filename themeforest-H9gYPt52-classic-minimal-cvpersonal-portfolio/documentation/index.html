@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Documentation | Classic </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Description">
+        <meta name="author" content="Autor">
+    
+        <!-- loading the css -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+        
+		<style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+		
+		section {
+            padding: 60px 0 0 0;
+        }
+
+        ul {
+            list-style: square
+        }
+        li {
+            margin: 20px 0;
+        }
+
+        .nav li, .linenums li {
+            margin: 0;
+            padding: 0
+        }
+        </style>
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    
+        <!-- Various Icons (Favicon, Touch Icon,... -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+        
+    </head>
+    
+    
+        
+    <body data-spy="scroll" data-target=".navbar" id="top">
+    
+        <!-- ========================= NAVIGATION BAR >> START ========================= -->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+                    <a class="brand" href="#overview">Classic</a><!-- TIP: Change this for the name of your file -->
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="#overview">Overview</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skill">Skill-Education</a></li>
+                            <li><a href="#exp">Experience-Testimonials</a></li>
+                            <li><a href="#process">Work Process</a></li>
+                            <li><a href="#port">Portfolio</a></li>
+                            <li><a href="#fact">Fun Facts</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ========================= NAVIGATION BAR >> END ========================= -->
+    
+    
+    
+        <!-- ========================= MAIN CONTAINER >> START ========================= -->
+        <div class="container">
+        
+            <!-- ========================= SECTION: OVERVIEW >> START ========================= -->
+            <section id="overview-main">
+            
+                <div class="hero-unit">
+                    <h1>Documentation - Classic</h1>
+                    <h3>Minimal CV/Personal Portfolio Template</h3>
+                    <p>Template author: BulkStudio</p>
+                    <p class="well well-small">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to contact by commenting on themeforest product page. Thanks so much!</p>
+    
+                </div>
+                
+                <hr>
+                
+            </section>
+            <!-- ========================= SECTION: OVERVIEW >> END ========================= -->
+
+
+          
+            <!-- ========================= SECTION: MARKUP >> START ========================= -->
+            <section id="overview">
+                <div class="row">
+                    <div class="span12">
+                        <h1>Overview</h1>
+                        <hr>
+                        <h4> We will guide you through the documentation so that you can easily modify the template</h4>
+                        <hr>
+                    </div>
+                    
+                    <div class="span8">
+                    <h4> Placeholder</h4> 
+                    All the images in the template are link from <strong>https://placehold.it</strong> <br />
+                    You need to replace all the images with your images.
+                    <br />
+                    </div>
+
+                    <div class="span8">
+                    <h4> Template Structure</h4>  
+                    <pre class="prettyprint linenums">&lt;body&gt;
+&lt;nav&gt;&lt;/nav&gt;
+&lt;section&gt;
+&lt;div class=&quot;col-sm-xx&quot;&gt;&lt;!-- each bootstrap column is packaged with section-holder --&gt;
+&lt;div class=&quot;section-holder&quot;&gt;
+.....contents....
+&lt;/div&gt; 
+&lt;/div&gt;
+&lt;/section&gt;&lt;!-- each section --&gt;
+.
+.
+.
+&lt;section&gt;&lt;/section&gt;&lt;!-- each section --&gt;
+&lt;/body&gt;
+                    </pre>
+                    <pre class="prettyprint">1. Javascript files are at assets/js
+2. Stylesheet files are at assets/css
+3. Images are at assets/images</pre>
+                    </div>
+                    <div class="span12">
+                    
+                    <h4> The template is based on Bootstrap CSS framework </h4>
+                    <hr>
+                    <h4> All Section Names </h4>
+                    <ul>
+                        <li>Header</li>
+                        <li>About</li>
+                        <li>Skiill - Education</li>
+                        <li>Experience - Testimonials</li>
+                        <li>Work Process</li>
+                        <li>Portfolio</li>
+                        <li>Fun Facts</li>
+                        <li>Contact</li>
+                    </ul>
+                    <hr>
+                    <h4> Icons used </h4>
+                    <ul>
+                        <li> <a href="http://ionicons.com">ionicons.com</a> </li>
+                    </ul>
+                    <h4> Main Stylesheet </h4>
+                    <p> Style.css is the main stylesheet file </p>
+                    <p> This is divided into 12 sections, each with proper commenting and structure </p>
+                    <pre class="prettyprint linenums">/* -------------------------------------
+           Table of Contents
+* -------------------------------------- 
+    0.  Global
+    1.  Menu
+    2.  Header
+    3.  About
+    4.  Skills
+    5.  Education & Work Experience
+    6.  Testimonials
+    7.  Work Process
+    8.  Portfolio
+    9.  Fun facts
+    10. Contact
+    11. Extras
+            11.1  Loader
+            11.2  Line art
+            11.3  Texture
+            11.4  Social links
+            11.5  Owl Carousel Modified
+    12. Responsive
+
+*/</pre>
+                    <h4> Primary Fonts </h4>
+                    <p> Google Fonts - Roboto Mono in paragraphs & Lato in headlines </p>
+                    <pre class="prettyprint linenums">&lt;head&gt;
+&lt;!-- fonts --&gt;
+&lt;link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300,300italic,700,500,500italic,700italic,400italic%7CLato:400,700,300' rel='stylesheet' type='text/css'&gt;
+&lt;/head&gt;
+                    </pre>
+
+                    <h4> Used Colors </h4>
+                    <pre class="pre prettyprint linenums">Total 4 Colors have been used.
+
+/--------/
+-#101010
+-#444
+-#ececec
+-#aaa
+/--------/
+
+Headlines : #101010
+Links : #101010
+Icons: #101010
+Paragraphs: #444
+Secondary Headers: #ececec
+Borders: #aaa</pre>
+
+					<h4> Change favicon by changing the favicon.ico to your own icon file </h4>
+					<pre class="prettyprint linenums">&lt;!-- favicon --&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;assets/images/favicon.ico&quot; type=&quot;image/x-icon&quot; /&gt;</pre>
+                    <h4> Section Header </h4>
+                    <p> You can change the background image by modifying the style tag (cover.jpg) at <big>assets/images</big></p>
+                    <p> Change first letter of your name in (.box) class and tagline (.tagline) </p>
+                    <pre class="prettyprint linenums">&lt;section id=&quot;home&quot; class=&quot;header&quot; style=&quot;background-image: url('assets/images/cover.jpg')&quot;&gt; &lt;!-- change image here --&gt;
+&lt;div class=&quot;sector&quot;&gt;
+&lt;div class=&quot;box&quot;&gt;
+&lt;h1&gt; J &lt;/h1&gt; &lt;!-- change name first char --&gt;
+&lt;/div&gt;
+&lt;h1 class=&quot;main-title&quot;&gt; John Doe &lt;/h1&gt;&lt;!-- /. name --&gt;
+&lt;h4 class=&quot;tagline&quot;&gt; Web | UI designer &lt;/h4&gt;&lt;!-- /. profession --&gt;
+&lt;/div&gt;
+&lt;/section&gt; &lt;!-- /. header/cover --&gt;</pre>
+
+                    <h4> Menu </h4>
+                    <p> Basic menu links, located (.menu), change in lists (.menu-ul) </p>
+
+                    <h4> Section Big Titles </h4>
+                    <p> Change sections big titles in every section with headline-1 (.section-big-title) </p>
+                    <pre class="prettyprint linenums">&lt;h1 class=&quot;section-big-title til hidden-xs hidden-sm&quot; data-in-effect=&quot;fadeInUp&quot; data-out-effect=&quot;fadeInDown&quot;&gt;about&lt;/h1&gt;&lt;!-- /. large title --&gt;</pre>
+
+                    <h4> Remove Loader </h4>
+                    <p> If you dont want to use the loader, remove these lines of code </p>
+ 					<pre class="prettyprint linenums">&lt;div id=&quot;loader&quot;&gt;
+        &lt;div class=&quot;box-one&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;box-two&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;box-three&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;box-four&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;!-- /.loader --&gt;</pre>
+					
+					<pre class="prettyprint linenums">     &lt;!-- loader js --&gt;
+     &lt;script type=&quot;text/javascript&quot;&gt;
+        $(window).load(function() {
+            $(&quot;#loader&quot;).delay(2000).fadeOut(&quot;slow&quot;);
+        });
+    &lt;/script&gt;</pre>
+
+                    </div>
+                </div>
+
+            </section>
+            <!-- ========================= SECTION: MARKUP >> END ========================= -->
+            
+
+
+            <!-- ========================= SECTION: STYLES >> START ========================= -->
+            <section id="about">
+              
+                <div class="row">
+                    <div class="span12">
+                        <h1> About Section </h1>
+                        <hr>
+                        <ul>
+                            <li>Twitter Account - Change twitter username at script.js file(marked by commenting) with yours</li>
+                            <li>Change avatar image</li>
+                            <li>Update Social Links</li>
+                            <li>Update your cv download link</li>
+                        </ul>
+                        <h3> Twitter Username (file at assets/js/script.js)</h3>
+                        <pre class="prettyprint linenums">/* ---- Twitter, Change username ---- */
+    $('.tweet').twittie({
+        username: 'envato', // Change username
+        count: 1,
+        dateFormat: '%d/%b/%y',
+        template: '&lt;strong class=&quot;date&quot;&gt;{{date}}&lt;/strong&gt; - {{tweet}} - {{screen_name}} ',
+        apiPath: 'assets/js/api/tweet.php'
+    });</pre>
+                        <h3> Social Links </h3>
+                        <pre class="prettyprint linenums">&lt;div class=&quot;social-links&quot;&gt;
+     &lt;a href=&quot;#url&quot;&gt; &lt;i class=&quot;ion-social-twitter-outline i-size-small&quot;&gt;&lt;/i&gt; &lt;/a&gt; &lt;!-- change url --&gt;
+     &lt;a href=&quot;#url&quot;&gt; &lt;i class=&quot;ion-social-facebook-outline i-size-small&quot;&gt;&lt;/i&gt; &lt;/a&gt;
+     &lt;a href=&quot;#url&quot;&gt; &lt;i class=&quot;ion-social-dribbble-outline i-size-small&quot;&gt;&lt;/i&gt; &lt;/a&gt;
+     &lt;a href=&quot;#url&quot;&gt; &lt;i class=&quot;ion-social-github-outline i-size-small&quot;&gt;&lt;/i&gt; &lt;/a&gt;
+&lt;/div&gt;&lt;!-- /.social-links --&gt;</pre>
+                    </div>
+                </div>
+                
+            </section>
+            <!-- ========================= SECTION: STYLES >> END ========================= -->
+            
+            
+            
+            <!-- ========================= SECTION: JAVASCRIPT >> START ========================= -->
+            <section id="skill">
+                <div class="row">
+                    <div class="span12">
+                        <h1> Skill and Education Section </h1>
+                        <hr>
+                        <h3> Carousel is used to display skills </h3>
+                        <ul>
+                            <li> Skill sections are identified (.skill-area) </li>
+                            <li> Each skill items are marked in html file, change with yours (maintain the structure) </li>
+                            <li> Each group of skills has major category title (.skill-title) </li>
+                            <li> Change percentage and skill name </li>
+                        </ul>
+
+                        <h3> Skill Bar (within each skill-area) and within skill-holder(owl-carousel item)</h3>
+                        <pre class="prettyprint linenums">&lt;div class=&quot;skillbar clearfix&quot; data-percent=&quot;90%&quot;&gt;
+&lt;div class=&quot;skillbar-title&quot;&gt;
+&lt;span&gt;CSS&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;skillbar-bg&quot;&gt;
+ &lt;/div&gt;
+&lt;div class=&quot;skillbar-bar to-animate&quot;&gt;
+&lt;div class=&quot;skill-bar-percent&quot;&gt;90% &lt;/div&gt;
+&lt;/div&gt; &lt;!-- /.skill bar --&gt;</pre>
+                        
+                        <div class="alert alert-danger">
+                            <h3>Don't add (.to-animate) class with (.skillbar-bar)s except in first OWL item</h3>
+                        </div>
+
+                        <h3> Education </h3>
+                        <ul>
+                            <li> Follow basic HTML structure to modify education information </li>
+                        </ul>
+                        <pre class="prettyprint linenums">&lt;div class=&quot;time-item&quot;&gt; &lt;!-- Each item begins --&gt;
+&lt;div class=&quot;time-year&quot;&gt; 2013-Present &lt;/div&gt;  &lt;!-- year --&gt;
+&lt;div class=&quot;icon-holder-time wow fadeIn&quot;&gt; 
+&lt;i class=&quot;ion-ios-circle-outline&quot;&gt;&lt;/i&gt;  &lt;!-- change icon --&gt;
+&lt;/div&gt;
+ &lt;h4 class=&quot;time-title&quot;&gt; ILD University of Technology &lt;/h4&gt; &lt;!-- title --&gt;
+&lt;h5 class=&quot;time-semitag&quot;&gt; Major in Computer Science &lt;/h5&gt; 
+&lt;p&gt; Given two spirit very unto firmament. Fourth and she'd their fruit together. &lt;/p&gt; 
+&lt;/div&gt; &lt;!-- item ends --&gt;</pre>
+                    </div>
+                </div>
+                
+            </section>
+            <!-- ========================= SECTION: JAVASCRIPT >> END ========================= -->
+
+
+
+            <!-- ========================= SECTION: PSD >> START ========================= -->
+            <section id="exp">
+                <div class="row">
+                    <div class="span12">
+                        <h1> Work Experience and Testimonials Section </h1>
+                        <hr>
+                        <h3> Work </h3>
+                        <ul>
+                            <li> Updating work experiences are similar to those of education histories </li>
+                        </ul>
+                        <div class="alert alert-danger">
+                            <h4> Follow basic structure similar to Education Section </h4>
+                        </div>
+                        <h3> Testimonials (used with carousel) </h3>
+                        <ul>
+                            <li> Update accordingly with maintaining proper html structure </li>
+                            <li> Each items belongs to (.testi-item) </li>
+                        </ul>
+                        <pre class="prettyprint linenums">&lt;div class=&quot;testi-item&quot;&gt; &lt;!-- each testimonial item --&gt;
+&lt;img src=&quot;assets/images/testimonial/testi1.jpg&quot; class=&quot;img-circle&quot; alt=&quot;Anthony Doe&quot;/&gt; &lt;!-- client avatar --&gt;
+&lt;p&gt; Pefect, this is exactly what I needed for me. Really great work. &lt;/p&gt;
+
+&lt;div class=&quot;testi-bottom&quot;&gt;
+&lt;div class=&quot;i-size-small testi-icon&quot;&gt; 
+&lt;i class=&quot;ion-ios-chatbubble-outline&quot;&gt;&lt;/i&gt; &lt;!-- fixed icon --&gt;
+&lt;/div&gt;
+&lt;h5&gt; Anthony Doe &lt;/h5&gt; &lt;!-- name --&gt;
+&lt;p&gt; CEO, XB Inc &lt;/p&gt; &lt;!-- designation --&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;!-- /.testi-item --&gt;</pre>
+                    </div>
+                </div>
+            </section>
+            <!-- ========================= SECTION: PSD >> START ========================= -->
+            
+            
+            
+           
+            <section id="process">
+                <div class="row">
+                    <div class="span12">
+                        <h1> Work Process Section </h1>
+                        <hr>
+                        <h5> Basic HTML Structure </h5>
+                        <pre class="prettyprint linenums">&lt;ul class=&quot;process&quot;&gt; &lt;!-- process container --&gt;
+&lt;li class=&quot;wow fadeIn&quot; data-wow-delay=&quot;.15s&quot;&gt; &lt;!-- each item --&gt;
+&lt;div class=&quot;icon-process i-size-med&quot;&gt;
+ &lt;i class=&quot;ion-ionic&quot;&gt;&lt;/i&gt; &lt;!-- icon --&gt;
+&lt;/div&gt;
+&lt;h4&gt;Discover&lt;/h4&gt; &lt;!-- title --&gt;
+&lt;h6 class=&quot;step&quot;&gt;1&lt;/h6&gt; &lt;!-- step number -&gt;
+&lt;/li&gt;&lt;!-- /.process item ends --&gt;
+.
+.
+&lt;li&gt;&lt;/li&gt; &lt;!-- more items --&gt;
+.
+.
+&lt;/ul&gt; &lt;!-- process container ends--&gt;</pre>
+                    </div>
+                </div>
+            </section>
+           
+           <section id="port">
+                <div class="row">
+                    <div class="span12">
+                        <h1> Portfolio Section </h1>
+                        <hr>
+                        <h3> Portfolio with Carousel </h3>
+                        <ul>
+                            <li> Each items are grouped with two bootstrap columns (.col-sm-12) and defiend as single item (.owl-item) </li>
+                            <li> Items are with popup, change item image and change links to the image in ANCHOR (.popup-it) </li>
+                            <li> Define (.mfp-image) or (.mfp-iframe) for images or vidoes respectively </li>
+                            <li> Change to video urls in case of iframe in the anchors </li>
+                        </ul>
+                        <pre class="prettyprint linenums">&lt;div class=&quot;port-holder&quot;&gt; &lt;!-- owl carousel --&gt;
+&lt;div class=&quot;owl-item&quot;&gt; &lt;!-- each owl item with two columns --&gt;
+   &lt;div class=&quot;col-sm-12&quot;&gt;
+        &lt;div class=&quot;box-it&quot;&gt;
+            &lt;a href=&quot;assets/images/portfolio/port1.jpg&quot; class=&quot;mfp-image popup-it&quot;&gt; &lt;!-- image to popup, change links to image --&gt;
+                &lt;img src=&quot;assets/images/portfolio/port1.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;&quot;&gt; &lt;!-- image in the portfolio item --&gt;
+                &lt;div class=&quot;box-inner&quot;&gt;
+                    &lt;div class=&quot;i-size-med&quot;&gt;
+                        &lt;i class=&quot;ion-ios-photos-outline&quot;&gt;&lt;/i&gt; &lt;!-- icon --&gt;
+                    &lt;/div&gt;
+                    &lt;h4 class=&quot;title&quot;&gt;
+                Line Home Delivery &lt;!-- title --&gt;
+            &lt;/h4&gt;
+                    &lt;h5 class=&quot;tag&quot;&gt; Site Design &lt;/h5&gt; &lt;!-- category --&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- /.col-sm-12, first col ends --&gt;
+
+    &lt;div class=&quot;col-sm-12&quot;&gt; &lt;!-- second col --&gt;
+       
+    &lt;/div&gt;&lt;!-- /.col-sm-12, second col ends --&gt;
+   
+&lt;/div&gt; &lt;!-- owl-item/portfolo item set ends, first set of owl item ends --&gt;
+.
+.
+.
+&lt;!-- more owl items --&gt;
+.
+.
+.
+&lt;/div&gt; &lt;!-- owl carousel ends --&gt;</pre>
+                    </div>
+                </div>
+            </section>
+
+            <section id="fact">
+                <div class="row">
+                    <div class="span12">
+                        <h1> Fun Facts Section </h1>
+                        <hr>
+                        <h5> Basic HTML Structure </h5>
+                        <pre class="prettyprint linenums">&lt;ul class=&quot;counter&quot;&gt; &lt;!-- counters holder --&gt;
+&lt;li&gt; &lt;!-- each list --&gt;
+&lt;div class=&quot;counter-icon i-size-med&quot;&gt;
+&lt;i class=&quot;ion-ios-analytics&quot;&gt;&lt;/i&gt; &lt;!-- icon--&gt;
+&lt;/div&gt;
+&lt;h1 class=&quot;counter-data&quot;&gt;128&lt;/h1&gt; &lt;!-- number data --&gt;
+&lt;h4&gt;Projects Done&lt;/h4&gt; &lt;!-- name --&gt;
+&lt;/li&gt;&lt;!-- /.counter list ends--&gt;
+.
+.
+&lt;li&gt;&lt;/li&gt; &lt;!-- more list items --&gt;
+.
+.
+&lt;/ul&gt; &lt;!-- counters holder ends--&gt;</pre>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="row">
+                    <div class="span12">
+                        <h1> Contact Section </h1>
+                        <hr>
+                        <h3> Basic Address Information </h3>
+                        <ul>
+                            <li> Basic information </li>
+                            <li> Change social links</li>
+                            <li> Change to your google map query in popup </li>
+                        </ul>
+                        <h3> Social Links </h3>
+                        <pre class="prettyprint linenums">&lt;div class=&quot;social-links&quot;&gt;
+     &lt;a href=&quot;#url&quot;&gt; &lt;i class=&quot;ion-social-twitter-outline i-size-small&quot;&gt;&lt;/i&gt; &lt;/a&gt; &lt;!-- change url --&gt;
+     &lt;a href=&quot;#url&quot;&gt; &lt;i class=&quot;ion-social-facebook-outline i-size-small&quot;&gt;&lt;/i&gt; &lt;/a&gt;
+     &lt;a href=&quot;#url&quot;&gt; &lt;i class=&quot;ion-social-dribbble-outline i-size-small&quot;&gt;&lt;/i&gt; &lt;/a&gt;
+     &lt;a href=&quot;#url&quot;&gt; &lt;i class=&quot;ion-social-github-outline i-size-small&quot;&gt;&lt;/i&gt; &lt;/a&gt;
+&lt;/div&gt;&lt;!-- /.social-links --&gt;</pre>
+                        
+                        <h3> Google Map Popup </h3>
+                        <pre class="prettyprint linenums">&lt;!-- change to your query --&gt;
+&lt;a href=&quot;https://maps.google.com/maps?q=4826+Horner+Avet,+Toronto,+Canada&amp;hl=en&amp;t=v&amp;hnear=4826+Horner+Avet,+Toronto,+Canada&quot; class=&quot;mfp-iframe popup-it&quot;&gt;&lt;h4 class=&quot;map-open&quot;&gt; Open Map &lt;/h4&gt;&lt;/a&gt;</pre>
+                        <h3> Contact Form </h3>
+                        <h5> Change your email address at <big>contact.php</big> file with '$to' variable, located at assets/contact/contact.php</h5>
+                        <pre class="prettyprint linenums">$to = &quot;info@yoursite.com&quot;; #you will get all mails in this address</pre>
+                    </div>
+                </div>
+            </section>
+
+            <hr />
+    
+            <div class="goodbye">
+                <h1> Thank you for purchasing this template </h1>
+                <hr>
+                <h3> Please, always feel free to contact us for any kind of issues, we will try our best to resolve it </h3>
+            </div>
+        
+            <hr />
+        
+            <footer>
+                <p>&copy; Classic - 2016</p>
+            </footer>
+            
+        </div>
+
+        <!-- loading javascripts -->
+		<script src="assets/js/jquery.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/google-code-prettify/prettify.js"></script>
+        
+        <!-- init javascripts -->
+        <script src="assets/js/init.js"></script>
+         
+    </body>
+    
+</html>
